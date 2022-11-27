@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container {margin-left: 20%; margin-right: 20%; border: 1px; border-color: black;}
+</style>
+<body>
+    <h1>USER PAGE FOR: <%= rows[0].seller_user %> </h1>
+    <div class="container" style="margin-left: 20%; margin-right: 20%; border: 1px; border-color: black;">
+        <div class="row">
+                <div class="col-sm">
+                    Username: <%= rows[0].seller_user %><br>
+                    Store Location: <%= rows[0].seller_location %><br>
+                    Sold Items: <%= rows[0].sold_items %> <br>
+                    Rating: <%= rows[0].rating %><br><br>
+                    User Description: <br><%= rows[0].seller_description %>
+                </div>
+          
+        </div>
+      </div>
+</body>
+</html>

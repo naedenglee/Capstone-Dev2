@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  place-items: center;
+  background-color: whitesmoke;
+}
+
+.footer{
+  height: 700px;
+}
+.container{
+  margin-top: 30px;
+
+}
+
+/* FOR CART NUMBER */
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #20dbc2;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+
+.navbar-brand{
+  margin-left: 3px;
+}
+
+
+.container-box{
+  height: 100%;
+  width: 800px;
+  position: relative;
+  
+  margin-bottom: 30px;
+}
+.container-box .wrapper{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper.active{
+  border: none;
+}
+.wrapper .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon{
+  font-size: 50px;
+  color: #76bfb6;
+}
+.wrapper .text{
+  font-size: 15px;
+  font-weight: 400;
+  color: #76bfb6;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 18px;
+  right: 15px;
+  top: 15px;
+  color: #76bfb6;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 13px;
+  color: #fff;
+  display: none;
+  background: linear-gradient(135deg,#76bfb6 0%,#76bfb6 100%);
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container-box #custom-btn{
+  margin-top: 10px;
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(135deg,#76bfb6 0%,#76bfb6 100%);
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+

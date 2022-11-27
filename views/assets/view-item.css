@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar-brand{
+  margin-left: 3px;
+}
+
+.main {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* height: 300px; Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* ITEM PAGE (LEFT SIDE) PHOTO BOX */
+
+div.polaroid {
+width: 75%;
+background-color: #20dbc2;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-bottom: 25px;
+}
+
+div.p-container {
+text-align: center;
+padding: 15px 20px;
+}
+
+.main2
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: rgb(27, 27, 27);
+ 
+
+}
+h3{
+  font-weight: bold;
+  color: rgb(27, 27, 27);
+  text-shadow: 2px 1px gray;
+}
+
+/* ITEM PAGE (RIGHT SIDE) */
+
+div.box1{
+  border-radius: 15px;
+  background: #EBECF0;
+  padding: 20px; 
+  width: auto;
+  height: 150px;  
+}
+
+
+#map{
+border-radius: 15px;
+background: #EBECF0;
+padding: 20px; 
+width: 570px;
+height: 150px;  
+}
+.img2 {
+  
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+  float: left;
+  padding-right: 10px;
+  
+}
+
+.img2:hover {
+  box-shadow: 0 0 2px 1px grey;
+}
+
+.checked {
+  color: orange;
+}
+.btn-message, .btn-profile {
+  width: 200px;
+  height: 39px;
+  outline: none;
+  border: none;
+  border-radius: 48px;
+  background-color: #00bfa6;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  margin: 10px 0;
+  transition: all 0.5s;
+}
+.btn-message:hover,
+.btn-profile:hover,
+.btn-availability:hover {
+  background-color: #20dbc2;
+}
+
+.btna{  /* check availability button*/
+  
+  margin: 13px auto;
+display: block;
+  width: 400px;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #00bfa6;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: medium;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
